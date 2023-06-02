@@ -31,7 +31,7 @@ $ npm pkg set 'scripts.install:config'='node ./node_modules/eslint-config-webp-s
 
 Alternative, add this line to your scripts in the **package.json**:
 
-```json
+```jsx
 // package.json
 {
   "scripts": {
