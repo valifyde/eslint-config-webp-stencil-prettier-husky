@@ -83,7 +83,7 @@ The hooks should be installed automatically. Otherwise, run:
 ```shell
 # shell
 npx husky install
-npx husky-init && pnpm i
+npx husky-init && npm i
 npx husky set ./.husky/pre-commit "npm run lint"
 ```
 
