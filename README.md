@@ -35,11 +35,8 @@ Alternative, add this line to your scripts in the **package.json**:
 // package.json
 {
   "scripts": {
-    ...
     "install:config": "node ./node_modules/eslint-config-webp-stencil-prettier-husky/lib/generateLinks"
-    ...
-  },
-
+  }
 }
 ```
 
