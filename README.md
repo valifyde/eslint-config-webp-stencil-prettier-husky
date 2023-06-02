@@ -87,6 +87,18 @@ npx husky-init && npm i
 npx husky set ./.husky/pre-commit "npm run lint"
 ```
 
+Further reading for git tower users: [Getting Started with Git Hooks and Husky](https://www.git-tower.com/blog/git-hooks-husky/)
+
+```shell
+# If you want to use NVM:
+# https://github.com/typicode/husky/issues/390#issuecomment-545855628
+touch ~/.huskyrc
+
+# ~/.huskyrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+
 ## Known issues
 
 Dont change the `compilerOptions.lib` and `.target` in your `./tsconfig.json` to `es2022`. This will break the stencil component(s).
