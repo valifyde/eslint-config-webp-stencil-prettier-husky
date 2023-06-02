@@ -13,7 +13,7 @@ This configuration is using [Airbnb](https://www.npmjs.com/package/eslint-config
 Install the package (and RTFM ⬇️!):
 
 ```shell
-$ pnpm install -D eslint-config-webp-stencil-prettier-husky
+$ npm install -D eslint-config-webp-stencil-prettier-husky
 ```
 
 This will install the shared config files into the node_modules folder. But we have to do some more steps to get it working.
