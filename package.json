@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-webp-stencil-prettier-husky",
-  "version": "1.0.3",
+  "version": "1.0.31",
   "description": "ESLint + Prettier + StencilJS",
   "main": "index.js",
   "files": [
