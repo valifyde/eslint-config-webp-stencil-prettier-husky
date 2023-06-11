@@ -46,7 +46,8 @@ And run:
 $ npm run install:config
 ```
 
-The node script is copying all the config files now. pnpm can be regularly used:
+The node script is copying all the config files now. pnpm can be regularly used.
+Symlinks would be nicer, but Bamboo builds will fail.
 
 ### Script for deployment
 
@@ -99,11 +100,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ```
 
-## Known issues
+## Known issues / things to improve / side notes
 
-Dont change the `compilerOptions.lib` and `.target` in your `./tsconfig.json` to `es2022`. This will break the stencil component(s).
+- Dont change the `compilerOptions.lib` and `.target` in your `./tsconfig.json` to `es2022`. This will break the stencil component(s).
 
-If linting does not work after installation, simply restart vscode.
+- If linting does not work after installation, simply restart vscode.
+
+- If you want to use pnpm instead of npm, run the following command after installation:
+  `npm i && rm -rf node_modules && rm package-lock.json && pnpm i`
+
+- Update local linting settings in vscode, after a new version of this package is released:
+  `npm run install:config`
+
+- 2do: Better handling with symlinks and bamboo builds
 
 ## License
 
